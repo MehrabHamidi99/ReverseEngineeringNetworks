@@ -478,7 +478,8 @@ def visualize_surface(model, x_range=(-5, 5), y_range=(-5, 5), num_points=500):
 
     fig = plt.figure()
     ax = fig.add_subplot(projection='3d')
-    surf = ax.plot_surface(X, Y, Z, cmap=cm.coolwarm, linewidth=0, antialiased=False)
+    # surf = ax.plot_surface(X, Y, Z, cmap=cm.coolwarm, linewidth=0, antialiased=False)
+    surf = ax.plot_surface(X, Y, Z, linewidth=0, antialiased=False)
 
     ax.set_xlabel('X-axis')
     ax.set_ylabel('Y-axis')
